@@ -150,10 +150,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                  &kp Q            &kp W             &kp E         &kp R         &kp T      &kp Y      &kp U          &kp I         &kp O             &kp P
-                  &hml LEFT_ALT A  &hml LEFT_META S  &hml LCTRL D  &hml LSHFT F  &kp G      &kp H      &hml RSHFT J   &hml RCTRL K  &hml LEFT_META L  &hml LEFT_ALT SEMICOLON
-&kp LEFT_BRACKET  &kp Z            &kp X             &kp C         &kp V         &kp B      &kp N      &kp M          &kp COMMA     &kp DOT           &kp FSLH                 &kp SQT
-                                                     &kp ESCAPE    &kp SPACE     &kp TAB    &kp ENTER  &kp BACKSPACE  &kp DELETE
+                  &kp Q            &kp W             &kp E         &kp R         &kp T        &kp Y         &kp U            &kp I         &kp O             &kp P
+                  &hml LEFT_ALT A  &hml LEFT_META S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H         &hml RSHFT J     &hml RCTRL K  &hml LEFT_META L  &hml LEFT_ALT SEMICOLON
+&kp LEFT_BRACKET  &kp Z            &kp X             &kp C         &kp V         &kp B        &kp N         &kp M            &kp COMMA     &kp DOT           &kp FSLH                 &kp SQT
+                                                     &lt 6 ESCAPE  &lt 5 SPACE   &lt 4 TAB    &lt 1 RETURN  &lt 2 BACKSPACE  &lt 3 DELETE
             >;
         };
 
