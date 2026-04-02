@@ -231,19 +231,19 @@
 
         nav {
             bindings = <
-        &trans    &trans    &trans     &trans     &trans    &redo       &paste    &copy      &cut       &undo
-        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &caps_word  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
-&trans  &trans    &trans    &trans     &trans     &trans    &kp INSERT  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
-                            &trans     &trans     &trans    &kp RETURN  &kp BSPC  &kp DEL
+        &trans    &trans    &trans     &trans     &trans    &redo            &paste           &copy            &cut       &undo
+        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &caps_word       &kp LEFT         &kp DOWN         &kp UP     &kp RIGHT
+&trans  &trans    &trans    &trans     &trans     &trans    &kp INSERT       &kp HOME         &kp PG_DN        &kp PG_UP  &kp END    &trans
+                            &trans     &trans     &trans    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
             >;
         };
 
         sys {
             bindings = <
-        &trans    &trans    &trans     &trans     &trans    &trans           &sys_reset       &bt BT_CLR       &bt BT_CLR_ALL  &trans
-        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &trans           &trans           &trans           &trans          &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &trans           &bt BT_PRV       &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_NXT  &trans
-                            &trans     &trans     &trans    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
+        &trans    &trans    &trans     &trans     &trans    &trans  &sys_reset  &bt BT_CLR    &bt BT_CLR_ALL  &trans
+        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &trans  &trans      &trans        &trans          &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &bt BT_PRV  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_NXT  &trans
+                            &trans     &trans     &trans    &trans  &trans      &trans
             >;
         };
 
