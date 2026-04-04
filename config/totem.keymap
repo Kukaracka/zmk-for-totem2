@@ -222,10 +222,10 @@
 
         mouse {
             bindings = <
-        &trans    &trans    &trans     &trans     &trans    &redo     &paste          &copy           &cut          &undo
-        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &mkp MB4  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-&trans  &undo     &cut      &copy      &paste     &redo     &mkp MB5  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-                            &trans     &trans     &trans    &mkp MB2  &mkp MB1        &mkp MB3
+        &trans    &trans    &trans     &trans     &trans    &msc MOVE_Y(-10)  &mkp MB4           &mmv MOVE_Y(300)   &mkp MB5          &msc MOVE_X(10)
+        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &msc MOVE_Y(10)   &mmv MOVE_X(-300)  &mmv MOVE_Y(-300)  &mmv MOVE_X(300)  &msc MOVE_X(-10)
+&trans  &undo     &cut      &copy      &paste     &redo     &trans            &trans             &trans             &trans            &trans            &trans
+                            &trans     &trans     &trans    &mkp MB2          &mkp MB1           &mkp MB3
             >;
         };
 
