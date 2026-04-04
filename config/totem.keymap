@@ -113,7 +113,7 @@
         undo: undo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LC(Z)>;
+            bindings = <&kp LC(Z)>;
             label = "UNDO";
         };
 
@@ -224,7 +224,7 @@
             bindings = <
         &trans    &trans    &trans     &trans     &trans    &redo     &paste          &copy           &cut          &undo
         &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &mkp MB4  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-&trans  &trans    &trans    &trans     &trans     &trans    &mkp MB5  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+&trans  &undo     &cut      &copy      &paste     &redo     &mkp MB5  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
                             &trans     &trans     &trans    &mkp MB2  &mkp MB1        &mkp MB3
             >;
         };
@@ -233,7 +233,7 @@
             bindings = <
         &trans    &trans    &trans     &trans     &trans    &redo            &paste           &copy            &cut       &undo
         &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &caps_word       &kp LEFT         &kp DOWN         &kp UP     &kp RIGHT
-&trans  &trans    &trans    &trans     &trans     &trans    &kp INSERT       &kp HOME         &kp PG_DN        &kp PG_UP  &kp END    &trans
+&trans  &undo     &cut      &copy      &paste     &redo     &kp INSERT       &kp HOME         &kp PG_DN        &kp PG_UP  &kp END    &trans
                             &trans     &trans     &trans    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
             >;
         };
