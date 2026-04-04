@@ -180,6 +180,7 @@
             trigger-period-ms = <16>;
             acceleration-exponent = <1>;
             time-to-max-speed-ms = <250>;
+            delay-ms = <0>;
         };
     };
 
@@ -241,19 +242,19 @@
 
         mouse_fast {
             bindings = <
-        &trans    &trans    &trans     &trans     &trans    &msc MOVE_Y(20)   &mkp MB4             &mmv_fast MOVE_UP    &mkp MB5          &trans
-        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &msc MOVE_Y(-20)  &mmv_fast MOVE_LEFT  &mmv_fast MOVE_DOWN  &mmv MOVE_X(500)  &sl 5
-&trans  &undo     &cut      &copy      &paste     &redo     &trans            &trans               &trans               &trans            &trans  &trans
-                            &trans     &trans     &trans    &mkp MB2          &mkp MB1             &mkp MB3
+        &trans    &trans    &trans     &trans     &trans    &msc MOVE_Y(20)   &mkp MB4                &mmv_fast MOVE_Y(500)   &mkp MB5          &trans
+        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &msc MOVE_Y(-20)  &mmv_fast MOVE_X(-500)  &mmv_fast MOVE_Y(-500)  &mmv MOVE_X(500)  &mo 5
+&trans  &undo     &cut      &copy      &paste     &redo     &trans            &trans                  &trans                  &trans            &trans  &trans
+                            &trans     &trans     &trans    &mkp MB2          &mkp MB1                &mkp MB3
             >;
         };
 
         mouse_slow {
             bindings = <
-        &trans    &trans    &trans     &trans     &trans    &msc MOVE_Y(5)   &mkp MB4             &mmv_slow MOVE_UP    &mkp MB5               &trans
-        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &msc MOVE_Y(-5)  &mmv_slow MOVE_LEFT  &mmv_slow MOVE_DOWN  &mmv_slow MOVE_X(500)  &sl 4
-&trans  &undo     &cut      &copy      &paste     &redo     &trans           &trans               &trans               &trans                 &trans  &trans
-                            &trans     &trans     &trans    &mkp MB2         &mkp MB1             &mkp MB3
+        &trans    &trans    &trans     &trans     &trans    &msc MOVE_Y(5)   &mkp MB4                &mmv_slow MOVE_Y(100)   &mkp MB5               &trans
+        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &msc MOVE_Y(-5)  &mmv_slow MOVE_X(-100)  &mmv_slow MOVE_X(-100)  &mmv_slow MOVE_X(100)  &sl 4
+&trans  &undo     &cut      &copy      &paste     &redo     &trans           &trans                  &trans                  &trans                 &trans  &trans
+                            &trans     &trans     &trans    &mkp MB2         &mkp MB1                &mkp MB3
             >;
         };
 
