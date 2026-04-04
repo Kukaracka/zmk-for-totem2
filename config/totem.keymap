@@ -33,6 +33,11 @@
 
 &msc { trigger-period-ms = <50>; };
 
+&mmv {
+    acceleration-exponent = <0>;
+    trigger-period-ms = <8>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
