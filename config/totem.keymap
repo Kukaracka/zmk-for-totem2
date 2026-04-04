@@ -31,6 +31,8 @@
     tapping-term-ms = <170>;
 };
 
+&msc { trigger-period-ms = <50>; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -158,30 +160,6 @@
             quick-tap-ms = <200>;
             tapping-term-ms = <150>;
         };
-
-        mmv_slow: mmv_slow {
-            compatible = "zmk,behavior-input-two-axis";
-            label = "MMV_SLOW";
-            #binding-cells = <1>;
-            trigger-period-ms = <16>;
-            time-to-max-speed-ms = <0>;
-            acceleration-exponent = <0>;
-            x-input-code = <100>;
-            y-input-code = <100>;
-            delay-ms = <0>;
-        };
-
-        mmv_fast: mmv_fast {
-            compatible = "zmk,behavior-input-two-axis";
-            label = "MMV_FAST";
-            #binding-cells = <1>;
-            x-input-code = <600>;
-            y-input-code = <600>;
-            trigger-period-ms = <16>;
-            acceleration-exponent = <1>;
-            time-to-max-speed-ms = <250>;
-            delay-ms = <0>;
-        };
     };
 
     keymap {
@@ -242,19 +220,19 @@
 
         mouse_fast {
             bindings = <
-        &trans    &trans    &trans     &trans     &trans    &msc MOVE_Y(20)   &mkp MB4                &mmv_fast MOVE_Y(500)   &mkp MB5          &trans
-        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &msc MOVE_Y(-20)  &mmv_fast MOVE_X(-500)  &mmv_fast MOVE_Y(-500)  &mmv MOVE_X(500)  &mo 5
-&trans  &undo     &cut      &copy      &paste     &redo     &trans            &trans                  &trans                  &trans            &trans  &trans
-                            &trans     &trans     &trans    &mkp MB2          &mkp MB1                &mkp MB3
+        &trans    &trans    &trans     &trans     &trans    &msc MOVE_Y(20)   &mkp MB4           &mmv MOVE_Y(-600)  &mkp MB5          &trans
+        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &msc MOVE_Y(-20)  &mmv MOVE_X(-600)  &mmv MOVE_Y(600)   &mmv MOVE_X(600)  &mo 5
+&trans  &undo     &cut      &copy      &paste     &redo     &trans            &trans             &trans             &trans            &trans  &trans
+                            &trans     &trans     &trans    &mkp MB2          &mkp MB1           &mkp MB3
             >;
         };
 
         mouse_slow {
             bindings = <
-        &trans    &trans    &trans     &trans     &trans    &msc MOVE_Y(5)   &mkp MB4                &mmv_slow MOVE_Y(100)   &mkp MB5               &trans
-        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &msc MOVE_Y(-5)  &mmv_slow MOVE_X(-100)  &mmv_slow MOVE_X(-100)  &mmv_slow MOVE_X(100)  &sl 4
-&trans  &undo     &cut      &copy      &paste     &redo     &trans           &trans                  &trans                  &trans                 &trans  &trans
-                            &trans     &trans     &trans    &mkp MB2         &mkp MB1                &mkp MB3
+        &trans    &trans    &trans     &trans     &trans    &msc MOVE_Y(5)   &mkp MB4           &mmv MOVE_Y(-100)  &mkp MB5          &trans
+        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &msc MOVE_Y(-5)  &mmv MOVE_X(-100)  &mmv MOVE_Y(100)   &mmv MOVE_X(100)  &trans
+&trans  &undo     &cut      &copy      &paste     &redo     &trans           &trans             &trans             &trans            &trans  &trans
+                            &trans     &trans     &trans    &mkp MB2         &mkp MB1           &mkp MB3
             >;
         };
 
