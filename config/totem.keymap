@@ -227,7 +227,7 @@
             bindings = <
         &trans    &trans    &trans     &trans     &trans    &msc MOVE_Y(20)   &mkp MB4           &mmv MOVE_Y(-600)  &mkp MB5          &trans
         &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &msc MOVE_Y(-20)  &mmv MOVE_X(-600)  &mmv MOVE_Y(600)   &mmv MOVE_X(600)  &mo 5
-&trans  &undo     &cut      &copy      &paste     &redo     &trans            &trans             &trans             &trans            &trans  &trans
+&trans  &undo     &cut      &copy      &paste     &redo     &msc MOVE_X(-20)  &msc MOVE_X(20)    &trans             &trans            &trans  &trans
                             &trans     &trans     &trans    &mkp MB2          &mkp MB1           &mkp MB3
             >;
         };
@@ -236,17 +236,17 @@
             bindings = <
         &trans    &trans    &trans     &trans     &trans    &msc MOVE_Y(5)   &mkp MB4           &mmv MOVE_Y(-100)  &mkp MB5          &trans
         &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &msc MOVE_Y(-5)  &mmv MOVE_X(-100)  &mmv MOVE_Y(100)   &mmv MOVE_X(100)  &trans
-&trans  &undo     &cut      &copy      &paste     &redo     &trans           &trans             &trans             &trans            &trans  &trans
+&trans  &undo     &cut      &copy      &paste     &redo     &msc MOVE_X(-5)  &msc MOVE_X(5)     &trans             &trans            &trans  &trans
                             &trans     &trans     &trans    &mkp MB2         &mkp MB1           &mkp MB3
             >;
         };
 
         nav {
             bindings = <
-        &trans    &trans    &trans     &trans     &trans    &redo            &paste           &copy            &cut       &undo
-        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &caps_word       &kp LEFT         &kp DOWN         &kp UP     &kp RIGHT
-&trans  &undo     &cut      &copy      &paste     &redo     &kp INSERT       &kp HOME         &kp PG_DN        &kp PG_UP  &kp END    &trans
-                            &trans     &trans     &trans    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
+        &trans    &trans    &trans     &trans     &trans    &kp PAGE_UP    &kp HOME       &kp UP      &kp END          &trans
+        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &kp PAGE_DOWN  &kp LEFT       &kp DOWN    &kp RIGHT_ARROW  &trans
+&trans  &undo     &cut      &copy      &paste     &redo     &kp INSERT     &kp LC(LEFT)   &trans      &kp LC(RIGHT)    &trans  &trans
+                            &trans     &trans     &trans    &kp ENTER      &kp BACKSPACE  &kp DELETE
             >;
         };
 
