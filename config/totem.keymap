@@ -73,12 +73,12 @@
         };
 
         c7 {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp KP_NUMBER_6>;
             key-positions = <11 12>;
         };
 
         c8 {
-            bindings = <&kp SQT>;
+            bindings = <&kp KP_NUMBER_7>;
             key-positions = <17 18>;
         };
 
