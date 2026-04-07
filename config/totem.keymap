@@ -91,6 +91,11 @@
             bindings = <&caps_word>;
             key-positions = <13 16>;
         };
+
+        c11 {
+            bindings = <&rofi>;
+            key-positions = <33 36>;
+        };
     };
 
     macros {
@@ -134,6 +139,13 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE)>;
             label = "LAYOUT_CHANGE";
+        };
+
+        rofi: rofi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(T)>;
+            label = "ROFI";
         };
     };
 
