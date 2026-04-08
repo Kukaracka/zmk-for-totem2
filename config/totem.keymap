@@ -33,14 +33,15 @@
 
 &msc {
     trigger-period-ms = <50>;
-    acceleration-exponent = <1>;
+    acceleration-exponent = <0>;
     time-to-max-speed-ms = <400>;
 };
 
 &mmv {
-    acceleration-exponent = <1>;
+    acceleration-exponent = <2>;
     trigger-period-ms = <8>;
-    time-to-max-speed-ms = <600>;
+    time-to-max-speed-ms = <300>;
+    delay-ms = <0>;
 };
 
 / {
@@ -270,7 +271,7 @@
         mouse_fast {
             bindings = <
         &trans    &trans    &trans     &trans     &trans    &msc MOVE_Y(15)   &mkp MB4           &mmv MOVE_Y(-600)  &mkp MB5          &trans
-        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &msc MOVE_Y(15)   &mmv MOVE_X(-600)  &mmv MOVE_Y(600)   &mmv MOVE_X(600)  &mo 5
+        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &msc MOVE_Y(-15)  &mmv MOVE_X(-600)  &mmv MOVE_Y(600)   &mmv MOVE_X(600)  &mo 5
 &trans  &undo     &cut      &copy      &paste     &redo     &msc MOVE_X(-15)  &msc MOVE_X(15)    &trans             &trans            &trans  &trans
                             &trans     &trans     &trans    &mkp MB2          &mkp MB1           &mkp MB3
             >;
