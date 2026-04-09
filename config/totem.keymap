@@ -100,7 +100,7 @@
 
         rofi {
             bindings = <&rofi>;
-            key-positions = <34 13>;
+            key-positions = <13 33>;
         };
 
         c9 {
