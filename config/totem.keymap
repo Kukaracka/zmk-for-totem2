@@ -44,6 +44,8 @@
     delay-ms = <0>;
 };
 
+&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE COMMA SEMI DOT SINGLE_QUOTE>; };
+
 / {
     combos {
         compatible = "zmk,combos";
