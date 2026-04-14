@@ -44,7 +44,7 @@
     delay-ms = <0>;
 };
 
-&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE COMMA SEMI DOT SINGLE_QUOTE>; };
+&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE COMMA SEMI DOT SINGLE_QUOTE DOUBLE_QUOTES LEFT_BRACKET>; };
 
 / {
     combos {
