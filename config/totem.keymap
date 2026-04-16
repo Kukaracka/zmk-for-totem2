@@ -52,32 +52,32 @@
 
         c1 {
             bindings = <&kp LBKT>;
-            key-positions = <3 4>;
+            key-positions = <3 2>;
         };
 
         c2 {
             bindings = <&kp RBKT>;
-            key-positions = <6 5>;
+            key-positions = <6 7>;
         };
 
         c3 {
             bindings = <&kp LPAR>;
-            key-positions = <13 14>;
+            key-positions = <13 12>;
         };
 
         c4 {
             bindings = <&kp RPAR>;
-            key-positions = <16 15>;
+            key-positions = <16 17>;
         };
 
         c5 {
             bindings = <&kp LBRC>;
-            key-positions = <24 25>;
+            key-positions = <24 23>;
         };
 
         c6 {
             bindings = <&kp RBRC>;
-            key-positions = <27 26>;
+            key-positions = <27 28>;
         };
 
         layout_change {
@@ -92,32 +92,32 @@
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <6 7>;
+            key-positions = <7 8>;
         };
 
         underscore {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <2 3>;
+            key-positions = <2 1>;
         };
 
         semi {
             bindings = <&kp KP_NUMBER_4>;
-            key-positions = <16 17>;
+            key-positions = <16 17 18>;
         };
 
         colon {
             bindings = <&kp KP_N5>;
-            key-positions = <13 12>;
+            key-positions = <13 12 11>;
         };
 
         equal {
             bindings = <&kp EQUAL>;
-            key-positions = <27 28>;
+            key-positions = <28 29>;
         };
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <23 24>;
+            key-positions = <23 22>;
         };
 
         comma {
@@ -130,24 +130,14 @@
             key-positions = <17 18>;
         };
 
-        question {
-            bindings = <&kp KP_NUMBER_3>;
-            key-positions = <7 8>;
-        };
-
-        exclamantion {
-            bindings = <&kp EXCLAMATION>;
-            key-positions = <1 2>;
-        };
-
         single_quotes {
             bindings = <&kp KP_NUMBER_7>;
-            key-positions = <28 29>;
+            key-positions = <19 18>;
         };
 
         double_quotes {
             bindings = <&kp KP_NUMBER_6>;
-            key-positions = <22 23>;
+            key-positions = <10 11>;
         };
     };
 
