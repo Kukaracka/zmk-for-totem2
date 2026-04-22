@@ -109,6 +109,11 @@
             bindings = <&kp PLUS>;
             key-positions = <22 23>;
         };
+
+        sleep_combo {
+            bindings = <&tog 9>;
+            key-positions = <10 11 12 13 33>;
+        };
     };
 
     macros {
@@ -296,6 +301,15 @@
         &trans  &trans  &trans  &trans  &trans    &kp C_BRIGHTNESS_DEC  &bt BT_PRV    &kp C_VOL_DN  &bt BT_NXT    &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &bt BT_SEL 0          &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
                         &trans  &trans  &trans    &trans                &kp K_MUTE    &trans
+            >;
+        };
+
+        sleep {
+            bindings = <
+       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
             >;
         };
 
