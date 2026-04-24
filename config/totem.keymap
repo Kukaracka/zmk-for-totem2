@@ -50,36 +50,6 @@
     combos {
         compatible = "zmk,combos";
 
-        c1 {
-            bindings = <&kp LBKT>;
-            key-positions = <3 2>;
-        };
-
-        c2 {
-            bindings = <&kp RBKT>;
-            key-positions = <6 7>;
-        };
-
-        c3 {
-            bindings = <&kp LPAR>;
-            key-positions = <13 12>;
-        };
-
-        c4 {
-            bindings = <&kp RPAR>;
-            key-positions = <16 17>;
-        };
-
-        c5 {
-            bindings = <&kp LBRC>;
-            key-positions = <24 23>;
-        };
-
-        c6 {
-            bindings = <&kp RBRC>;
-            key-positions = <27 28>;
-        };
-
         layout_change {
             bindings = <&layout_change>;
             key-positions = <11 33>;
@@ -88,26 +58,6 @@
         rofi {
             bindings = <&rofi>;
             key-positions = <13 33>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <7 8>;
-        };
-
-        underscore {
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <2 1>;
-        };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <28 29>;
-        };
-
-        plus {
-            bindings = <&kp PLUS>;
-            key-positions = <22 23>;
         };
 
         sleep_combo {
@@ -199,7 +149,7 @@
 
             #binding-cells = <2>;
             quick-tap-ms = <200>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -289,8 +239,8 @@
         nav {
             bindings = <
         &trans    &trans    &trans     &trans     &trans    &kp PAGE_UP    &kp HOME       &kp UP      &kp END          &trans
-        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &kp PAGE_DOWN  &kp LEFT       &kp DOWN    &kp RIGHT_ARROW  &trans
-&trans  &undo     &cut      &copy      &paste     &redo     &kp INSERT     &kp LC(LEFT)   &caps_word  &kp LC(RIGHT)    &trans  &trans
+        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &kp PAGE_DOWN  &kp LEFT       &kp DOWN    &kp RIGHT_ARROW  &kp CAPSLOCK
+&trans  &undo     &cut      &copy      &paste     &redo     &kp INSERT     &kp LC(LEFT)   &caps_word  &kp LC(RIGHT)    &trans        &trans
                             &trans     &trans     &trans    &kp ENTER      &kp BACKSPACE  &kp DELETE
             >;
         };
