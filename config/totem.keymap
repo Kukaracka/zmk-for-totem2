@@ -80,11 +80,6 @@
             key-positions = <27 28>;
         };
 
-        layout_change {
-            bindings = <&layout_change>;
-            key-positions = <11 33>;
-        };
-
         rofi {
             bindings = <&rofi>;
             key-positions = <13 33>;
