@@ -109,6 +109,16 @@
             bindings = <&tog 9>;
             key-positions = <10 11 12 13 33>;
         };
+
+        single_quotes {
+            bindings = <&kp SQT>;
+            key-positions = <17 18>;
+        };
+
+        double_quotes {
+            bindings = <&kp DQT>;
+            key-positions = <11 12>;
+        };
     };
 
     macros {
@@ -222,7 +232,7 @@
             bindings = <
                &kp Q            &kp W             &kp E         &kp R         &kp T        &kp Y         &kp U            &kp I         &kp O             &kp P
                &hml LEFT_ALT A  &hml LEFT_META S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H         &hmr RSHFT J     &hmr RCTRL K  &hmr LEFT_META L  &hmr LEFT_ALT SEMICOLON
-&kp LG(SPACE)  &kp Z            &kp X             &kp C         &kp V         &kp B        &kp N         &kp M            &kp COMMA     &kp DOT           &kp FSLH                 &kp SQT
+&kp LG(SPACE)  &kp Z            &kp X             &kp C         &kp V         &kp B        &kp N         &kp M            &kp COMMA     &kp DOT           &kp FSLH                 &kp LA(TAB)
                                                   &lm 8 ESCAPE  &lm 7 SPACE   &lm 4 TAB    &lm 1 RETURN  &lm 2 BACKSPACE  &lm 3 DELETE
             >;
         };
