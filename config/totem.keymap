@@ -146,20 +146,6 @@
             bindings = <&kp LC(Z)>;
             label = "UNDO";
         };
-
-        layout_change: layout_change {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(SPACE)>;
-            label = "LAYOUT_CHANGE";
-        };
-
-        rofi: rofi {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(T)>;
-            label = "ROFI";
-        };
     };
 
     behaviors {
@@ -222,7 +208,7 @@
             bindings = <
                &kp Q            &kp W             &kp E         &kp R         &kp T        &kp Y         &kp U            &kp I         &kp O             &kp P
                &hml LEFT_ALT A  &hml LEFT_META S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H         &hmr RSHFT J     &hmr RCTRL K  &hmr LEFT_META L  &hmr LEFT_ALT SEMICOLON
-&kp LG(SPACE)  &kp Z            &kp X             &kp C         &kp V         &kp B        &kp N         &kp M            &kp COMMA     &kp DOT           &kp FSLH                 &rofi
+&kp LG(SPACE)  &kp Z            &kp X             &kp C         &kp V         &kp B        &kp N         &kp M            &kp COMMA     &kp DOT           &kp FSLH                 &kp LG(T)
                                                   &lm 8 ESCAPE  &lm 7 SPACE   &lm 4 TAB    &lm 1 RETURN  &lm 2 BACKSPACE  &lm 3 DELETE
             >;
         };
