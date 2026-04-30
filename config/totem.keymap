@@ -269,10 +269,10 @@
 
         nav {
             bindings = <
-        &trans    &trans    &trans     &trans     &trans    &kp PAGE_UP    &kp HOME       &kp UP      &kp END          &trans
-        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &kp PAGE_DOWN  &kp LEFT       &kp DOWN    &kp RIGHT_ARROW  &kp CAPSLOCK
-&trans  &undo     &cut      &copy      &paste     &redo     &kp INSERT     &kp LC(LEFT)   &caps_word  &kp LC(RIGHT)    &trans        &trans
-                            &trans     &trans     &trans    &kp RETURN     &kp BACKSPACE  &kp DELETE
+        &trans    &trans    &trans     &trans     &trans    &kp PAGE_UP    &kp HOME      &kp UP           &kp END          &trans
+        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &kp PAGE_DOWN  &kp LEFT      &kp DOWN         &kp RIGHT_ARROW  &kp CAPSLOCK
+&trans  &undo     &cut      &copy      &paste     &redo     &kp INSERT     &kp LC(LEFT)  &caps_word       &kp LC(RIGHT)    &trans        &trans
+                            &trans     &trans     &trans    &kp QUESTION   &kp FSLH      &kp RU_QUESTION
             >;
         };
 
