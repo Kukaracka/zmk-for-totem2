@@ -170,7 +170,6 @@
             tapping-term-ms = <150>;
             quick-tap-ms = <200>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <150>;
         };
 
         hmr: hmr {
@@ -182,7 +181,6 @@
             tapping-term-ms = <150>;
             quick-tap-ms = <200>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <150>;
         };
 
         lm: lm {
