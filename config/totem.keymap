@@ -47,14 +47,7 @@
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE COMMA SEMI DOT SINGLE_QUOTE DOUBLE_QUOTES LEFT_BRACKET>; };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        caps_word {
-            bindings = <&caps_word>;
-            key-positions = <3 6>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         redo: redo {
