@@ -49,8 +49,7 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        timeout-ms = <30>; 
+        timeout-ms = <30>;
 
         c1 {
             bindings = <&kp LBKT>;
@@ -123,7 +122,6 @@
             key-positions = <11 12>;
             layers = <0>;
         };
-
     };
 
     behaviors {
@@ -206,7 +204,7 @@
             bindings = <
                &hml LEFT_ALT Q  &hml LEFT_WIN W  &hml LCTRL E  &hml LEFT_SHIFT R  &kp T        &kp Y         &hmr LEFT_SHIFT U  &hmr LEFT_CONTROL I  &hmr LEFT_WIN O  &hmr LEFT_ALT P
                &kp A            &kp S            &kp D         &kp F              &kp G        &kp H         &kp J              &kp K                &kp L            &kp SEMI
-&kp LG(SPACE)  &kp Z            &kp X            &kp C         &kp V              &kp B        &kp N         &kp M              &kp COMMA            &kp DOT          &kp FSLH         &kp SQT
+&kp LG(SPACE)  &kp Z            &kp X            &kp C         &kp V              &kp B        &kp N         &kp M              &kp COMMA            &kp DOT          &kp FSLH         &kp LG(Z)
                                                  &lm 8 ESCAPE  &lm 7 SPACE        &lm 4 TAB    &rm 1 RETURN  &rm 2 BACKSPACE    &rm 3 DELETE
             >;
         };
