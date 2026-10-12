@@ -50,54 +50,6 @@
     combos {
         compatible = "zmk,combos";
         timeout-ms = <30>;
-
-        c1 {
-            bindings = <&kp LBKT>;
-            key-positions = <3 2>;
-            layers = <0>;
-        };
-
-        c2 {
-            bindings = <&kp RBKT>;
-            key-positions = <6 7>;
-            layers = <0>;
-        };
-
-        c3 {
-            bindings = <&kp LPAR>;
-            key-positions = <13 12>;
-            layers = <0>;
-        };
-
-        c4 {
-            bindings = <&kp RPAR>;
-            key-positions = <16 17>;
-            layers = <0>;
-        };
-
-        c5 {
-            bindings = <&kp LBRC>;
-            key-positions = <24 23>;
-            layers = <0>;
-        };
-
-        c6 {
-            bindings = <&kp RBRC>;
-            key-positions = <27 28>;
-            layers = <0>;
-        };
-
-        single_quotes {
-            bindings = <&kp SQT>;
-            key-positions = <17 18>;
-            layers = <0>;
-        };
-
-        double_quotes {
-            bindings = <&kp DQT>;
-            key-positions = <11 12>;
-            layers = <0>;
-        };
     };
 
     behaviors {
@@ -180,7 +132,7 @@
             bindings = <
                &hml LEFT_ALT Q  &hml LEFT_WIN W  &hml LCTRL E  &hml LEFT_SHIFT R  &kp T        &kp Y         &hmr LEFT_SHIFT U  &hmr LEFT_CONTROL I  &hmr LEFT_WIN O  &hmr LEFT_ALT P
                &kp A            &kp S            &kp D         &kp F              &kp G        &kp H         &kp J              &kp K                &kp L            &kp SEMI
-&kp LG(SPACE)  &kp Z            &kp X            &kp C         &kp V              &kp B        &kp N         &kp M              &kp COMMA            &kp DOT          &kp FSLH         &kp LG(Z)
+&kp LG(SPACE)  &kp Z            &kp X            &kp C         &kp V              &kp B        &kp N         &kp M              &kp COMMA            &kp DOT          &kp FSLH         &kp SQT
                                                  &lm 8 ESCAPE  &lm 7 SPACE        &lm 4 TAB    &rm 1 RETURN  &rm 2 BACKSPACE    &rm 3 DELETE
             >;
         };
