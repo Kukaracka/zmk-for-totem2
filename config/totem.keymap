@@ -49,41 +49,77 @@
 / {
     combos {
         compatible = "zmk,combos";
-        timeout-ms = <30>;
 
-        tab_combo {
-            bindings = <&kp TAB>;
-            key-positions = <11 12 13>;
+        c1 {
+            bindings = <&kp LBKT>;
+            key-positions = <3 2>;
+            timeout-ms = <30>;
         };
 
-        left_alt {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <0 1>;
+        c2 {
+            bindings = <&kp RBKT>;
+            key-positions = <6 7>;
+            timeout-ms = <30>;
         };
 
-        left_ctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <2 3>;
+        c3 {
+            bindings = <&kp LPAR>;
+            key-positions = <13 12>;
+            timeout-ms = <30>;
         };
 
-        left_meta {
-            bindings = <&kp LEFT_META>;
-            key-positions = <2 1>;
+        c4 {
+            bindings = <&kp RPAR>;
+            key-positions = <16 17>;
+            timeout-ms = <30>;
         };
 
-        right_alt {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <9 8>;
+        c5 {
+            bindings = <&kp LBRC>;
+            key-positions = <24 23>;
+            timeout-ms = <30>;
         };
 
-        right_ctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <7 6>;
+        c6 {
+            bindings = <&kp RBRC>;
+            key-positions = <27 28>;
+            timeout-ms = <30>;
         };
 
-        right_meta {
-            bindings = <&kp LEFT_META>;
+        minus {
+            bindings = <&kp MINUS>;
             key-positions = <7 8>;
+            timeout-ms = <30>;
+        };
+
+        underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <2 1>;
+            timeout-ms = <30>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <28 29>;
+            timeout-ms = <30>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <23 22>;
+            timeout-ms = <30>;
+        };
+
+        single_quotes {
+            bindings = <&kp KP_NUMBER_7>;
+            key-positions = <19 18>;
+            timeout-ms = <30>;
+        };
+
+        double_quotes {
+            bindings = <&kp KP_NUMBER_6>;
+            key-positions = <10 11>;
+            timeout-ms = <30>;
         };
     };
 
